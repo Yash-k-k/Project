@@ -1,0 +1,308 @@
+
+/* .heading {
+  background-image: url(./images/mountain-round.jpg);
+  background-size: cover;
+background-attachment: fixed;
+align-items: center;
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+  height: 100%;
+  width: 100%;
+} */
+.logo{
+  height: 150px;
+  width: 130px;
+  text-align: center;
+  margin-left: 130px;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+
+
+.btn-lamp-design {
+  margin: 22px auto 12px;
+  background-image: url(./images/lamp.png);
+  background-position: center;
+  background-size: contain;
+  height: 113px;
+  width: 60px;
+  overflow: hidden;
+  margin-left: 80%;
+  margin-top: -490px;
+  
+}
+.light{
+  margin: 22px auto 12px;
+  background-image: url(./images/newlight.jpg);
+  background-position: center;
+  background-size: contain;
+  height: 113px;
+  width: 60px;
+  overflow: hidden;
+  margin-left: 80%;
+  }
+
+.login-form {
+  z-index: 9;
+  position: absolute;
+  border: 2px solid hsl(0, 0%, 90%);
+  color: hsla(0, 0%, 100%, 0.897);
+  border-radius: 1.5rem;
+  backdrop-filter: blur(10px);
+  width: 26.25rem;
+}
+
+.password__hidden {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.log-head {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+input {
+  width: 85%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  place-content: center;
+  border-radius: 20px;
+  padding-right: 50px;
+}
+
+input::placeholder {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.placeholder {
+  position: center;
+}
+
+.glow-on-hover {
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #92e810;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-left: 160px;
+  backdrop-filter: blur(10px);
+
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #a1ece8;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+  opacity: 0.7;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 0.7;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #121212;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.password-container {
+  position: relative;
+  width: 200px;
+  margin: 20px;
+}
+
+/* YourComponent.css */
+
+.container {
+  position: relative;
+}
+
+.mode-btn-lgt {
+  position: absolute;
+  top: 1%;
+  left: 85%;
+  font-family: cursive;
+}
+
+.mode-btn-dark {
+  position: absolute;
+  top: 1%;
+  left: 85%;
+  font-family: cursive;
+  color: white;
+}
+
+.btn {
+  position: absolute;
+  top: 10%;
+  left: 90%;
+  background: #4e777b;
+  height: 30px;
+  width: 60px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+
+.btn.active {
+  background: #84a98c;
+}
+
+.btn span {
+  display: block;
+  background: #03071e;
+  height: 28px;
+  width: 30px;
+  border-radius: 147%;
+  margin-left: -5px;
+
+  transition: background 0.5s ease, margin-left 0.5s;
+}
+
+.btn.active span {
+  background: #ffe6a7;
+  margin-left: 22px;
+}
+
+.lamp__container {
+  position: absolute;
+  top: -40px;
+  left: 40%;
+  width: 200px;
+}
+
+.lamp {
+  width: 100%;
+  z-index: 99;
+}
+
+.light {
+  position: absolute;
+  top: 97%;
+  left: 45%;
+  transform: translateX(-50%);
+  width: 700px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.light.on {
+  opacity: 1;
+}
+
+/* LoginPage.css */
+
+.login-container-day,
+.login-container-dark {
+  display: flex;
+  background-image: url(./images/universe.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e7b7dc;
+}
+
+.login-container-dark {
+  display: flex;
+  background-image: url(./images/universe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensure background covers the container */
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e7b7dc;
+}
+
+/* Additional styles for smaller screens */
+@media (max-width: 768px) {
+  .login-container-day,
+  .login-container-dark {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    background-size: contain; /* Adjust background size for smaller screens */
+  }
+
+  .logo {
+    margin-left: 100px; /* Adjust logo margin for smaller screens */
+  }
+
+  .btn-lamp-design,
+  .light {
+    margin-left: 50%; /* Adjust margin for lamp and light for smaller screens */
+  }
+
+  .login-form {
+    width: 80%; /* Make the form full width on smaller screens */
+  }
+  .glow-on-hover{
+    margin-left: 115px;
+    margin-bottom: 15px;
+  }
+  input{
+    width: 260px;
+    margin-left: 8px;
+  }
+}

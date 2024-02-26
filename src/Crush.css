@@ -1,0 +1,71 @@
+.main-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80%;
+  width: 85%;
+}
+
+.name-logo{
+    height: 50%;
+    width: 45%;
+}
+.script-thought{
+  justify-content: left;
+}
+.eat-img{
+  text-align: center;
+}
+
+.yes-no-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.yes-btn {
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: #000100;
+  background: #7deded;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.no-btn {
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: #000000;
+  background: #7deded;
+  cursor: pointer;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  position: relative;
+  transition: margin-left 0s step-end; /* Adjust the duration and timing function as needed */
+}
+
+.no-btn:hover {
+  margin-left: 200px; /* Adjust the left margin as needed */
+}
+.nxt-btn{
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: #000000;
+  background: #7deded;
+  cursor: pointer;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+.yes-btn-block{
+  display: hide;
+}
+
+.full-main{
+  margin-top: 200px;
+}
